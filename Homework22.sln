@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kofeinya", "kofeinya", "{BB564CF6-C28A-478B-BC67-7320C2836BCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kofff", "kofff", "{5DFAE15D-7742-48E8-9417-703EB5EAEAED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "kofeinya\kofff\Server\Server.csproj", "{19E758CE-0CFD-4CC7-8546-0EB711AFE6BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19E758CE-0CFD-4CC7-8546-0EB711AFE6BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E758CE-0CFD-4CC7-8546-0EB711AFE6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E758CE-0CFD-4CC7-8546-0EB711AFE6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E758CE-0CFD-4CC7-8546-0EB711AFE6BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5DFAE15D-7742-48E8-9417-703EB5EAEAED} = {BB564CF6-C28A-478B-BC67-7320C2836BCC}
+		{19E758CE-0CFD-4CC7-8546-0EB711AFE6BA} = {5DFAE15D-7742-48E8-9417-703EB5EAEAED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAB40FCC-1608-4607-8007-5BCCF7ECB006}
+	EndGlobalSection
+EndGlobal
