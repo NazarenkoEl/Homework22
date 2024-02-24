@@ -7,7 +7,6 @@ D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\obj\Debug\net8.0\Server.M
 D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\obj\Debug\net8.0\Server.MvcApplicationPartsAssemblyInfo.cache
 D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\bin\Debug\net8.0\appsettings.Development.json
 D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\bin\Debug\net8.0\appsettings.json
-D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\bin\Debug\net8.0\DataBase.json
 D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\bin\Debug\net8.0\Server.exe
 D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\bin\Debug\net8.0\Server.deps.json
 D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\bin\Debug\net8.0\Server.runtimeconfig.json
@@ -59,3 +58,4 @@ D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\obj\Debug\net8.0\refint\S
 D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\obj\Debug\net8.0\Server.pdb
 D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\obj\Debug\net8.0\Server.genruntimeconfig.cache
 D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\obj\Debug\net8.0\ref\Server.dll
+D:\LIZA--D\HOMEWORK22\Homework22\kofeinya\kofff\Server\obj\Debug\net8.0\Server.sourcelink.json

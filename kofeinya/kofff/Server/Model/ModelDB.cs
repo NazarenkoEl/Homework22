@@ -25,7 +25,7 @@ public class ProductRepository
 
     private void ReadDataFromDatabase()
     {
-        products = GetAllProducts();
+        products = GetAllProductswhithID();
     }
 
     private void InitializeDatabase()
@@ -38,32 +38,7 @@ public class ProductRepository
     }
 
     
-    public Product GetProductById(int id)
-    {
-        using (SQLiteConnection connection = new SQLiteConnection(_connectionString))
-        {
-            connection.Open();
-            string query = "SELECT * FROM Products WHERE Id = @Id";
-            using (SQLiteCommand command = new SQLiteCommand(query, connection))
-            {
-                command.Parameters.AddWithValue("@Id", id);
-                using (SQLiteDataReader reader = command.ExecuteReader())
-                {
-                    if (reader.Read())
-                    {
-                        Product product = new Product(
-                            reader["Name"].ToString(),
-                            Convert.ToDouble(reader["Price"]),
-                            Convert.ToInt32(reader["Stock"])
-                        );
-                        return product;
-                    }
-                    return null;
-                }
-            }
-        }
-    }
-    public List<Product> GetAllProducts()
+    public List<Product> GetAllProductswhithID()
     {
         List<Product> products = new List<Product>();
 
@@ -80,6 +55,7 @@ public class ProductRepository
                     {
                         Product product = new Product(
                             reader["Name"].ToString(),
+                            Convert.ToInt32(reader["Id"]),
                             Convert.ToDouble(reader["Price"]),
                             Convert.ToInt32(reader["Stock"])
                         );
@@ -91,6 +67,36 @@ public class ProductRepository
 
         return products;
     }
+    public Product GetProductById(int id)
+    {
+        using (SQLiteConnection connection = new SQLiteConnection(_connectionString))
+        {
+            connection.Open();
+            string query = "SELECT * FROM Products WHERE Id = @Id";
+            using (SQLiteCommand command = new SQLiteCommand(query, connection))
+            {
+                command.Parameters.AddWithValue("@Id", id);
+                using (SQLiteDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        Product product = new Product(
+
+                            reader["Name"].ToString(),
+                            Convert.ToInt32(reader["Id"]),
+                            Convert.ToDouble(reader["Price"]),
+                            
+                            Convert.ToInt32(reader["Stock"])
+                            
+                        );
+                        return product;
+                    }
+                    return null;
+                }
+            }
+        }
+    }
+  
 
 
     public void AddProduct(Product product)

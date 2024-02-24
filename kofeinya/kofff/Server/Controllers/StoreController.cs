@@ -29,16 +29,18 @@ public class StoreController : ControllerBase
         public IActionResult Add([FromBody] Product newProduct)
         {
             _productRepository.AddProduct(newProduct);
-            return Ok(_productRepository.GetAllProducts());
+            return Ok(_productRepository.GetAllProductswhithID());
         }
 
 
         [HttpGet]
-        [Route("/store/show")]
-        public IActionResult Show()
+        [Route("/store/showall")]
+        public IActionResult Showall()
         {
-            return Ok(_productRepository.GetAllProducts());
+            return Ok(_productRepository.GetAllProductswhithID());
         }
+
+
         [HttpPost]
         [Route("/store/delete")]
         public IActionResult Delete(int id)
@@ -47,7 +49,7 @@ public class StoreController : ControllerBase
             if (product != null)
             {
                 _productRepository.DeleteProduct(id);
-                return Ok($"Продукт с ID{id} удален");
+                return Ok($"Продукт с Id {id} удален");
             }
             else
             {
